@@ -3,11 +3,11 @@ Description=Telegram Bot daemon
 After=network.target
 
 [Service]
-User=www
-Group=www
-WorkingDirectory=/home/www/td/
-Environment="PYTHONPATH=/home/www/td/"
-ExecStart=/home/www/td/.venv/bin/python /home/www/td/tga/manage.py bot
+User=lev
+Group=lev
+WorkingDirectory=/home/lev/rpbot/
+Environment="PYTHONPATH=/home/lev/rpbot/"
+ExecStart=/home/lev/rpbot/.venv/bin/python /home/lev/rpbot/mysite/manage.py tbot
 
 [Install]
 WantedBy=multi-user.target
