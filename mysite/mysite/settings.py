@@ -121,5 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 TOKEN = '1047078642:AAHibEk50cX7kYRU6WZ3MOl-q-52fttLmuc'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 MEDIA_URL = '/media/'
