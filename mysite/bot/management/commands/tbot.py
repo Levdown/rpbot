@@ -38,6 +38,7 @@ class Command(BaseCommand):
 
         @bot.message_handler(commands=['start'])
         def start_message(message):
+            print('дарова придурок')
             try:
                 l = Video.objects.all()
                 p, _ = Profile.objects.get_or_create(external_id=message.chat.id, defaults={'name': message.from_user.first_name})
