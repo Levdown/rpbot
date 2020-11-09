@@ -38,6 +38,7 @@ class Command(BaseCommand):
 
         @bot.message_handler(commands=['start'])
         def start_message(message):
+            bot.send_message(message.chat.id, 'Дарова придурок')
             print('дарова придурок')
             try:
                 l = Video.objects.all()
