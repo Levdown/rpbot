@@ -3,11 +3,11 @@ Description=Django Admin daemon
 After=network.target
 
 [Service]
-User=lev
-Group=lev
-WorkingDirectory=/home/lev/rpbot/mysite/mysite
-Environment="PYTHONPATH=/home/lev/rpbot/mysite"
-ExecStart=/home/lev/rpbot/.venv/bin/gunicorn --workers 2 --bind unix:/home/lev/run/tgadmin.sock wsgi:application
+User=root
+Group=root
+WorkingDirectory=/home/root/rpbot/mysite/mysite
+Environment="PYTHONPATH=/home/root/rpbot/mysite"
+ExecStart=/home/root/rpbot/.venv/bin/gunicorn --workers 2 --bind unix:/home/root/run/tgadmin.sock wsgi:application
 Restart=on-failure
 
 [Install]
